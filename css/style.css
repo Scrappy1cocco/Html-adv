@@ -417,16 +417,21 @@ template {
   line-height: 24px;
   border-bottom: 1px solid #ebebeb;
 }
+.header__menu-item-search span {
+  padding-left: 27px;
+}
+.header__menu-item-cart span {
+  padding-left: 25px;
+}
 .header__menu-item-text {
   position: relative;
   display: inline-block;
   min-width: 250px;
   padding-left: 85px;
+  order: 2;
 }
 .header__menu-item-icon {
-  position: absolute;
-  top: 3px;
-  left: 35px;
+  margin-left: 40px;
 }
 .header__other-list {
   display: none;
@@ -462,8 +467,20 @@ template {
     justify-content: flex-end;
     flex-grow: 1;
   }
+  .header__menu-logo:hover {
+    opacity: .6;
+  }
+  .header__menu-logo:active {
+    opacity: .3;
+  }
   .header__menu-item {
     border: none;
+  }
+  .header__menu-item:hover span {
+    opacity: .6;
+  }
+  .header__menu-item:active span {
+    opacity: .3;
   }
   .header__menu-item-catalog {
     position: absolute;
@@ -478,27 +495,40 @@ template {
     padding: 0;
   }
   .header__menu-item-search {
-    padding: 33px 40.5px;
+    padding: 33px 31px;
     border-left: 1px solid #ebebeb;
     border-right: 1px solid #ebebeb;
   }
+  .header__menu-item-search:hover img {
+    opacity: 1;
+  }
+  .header__menu-item-search:active img {
+    opacity: .1;
+  }
   .header__menu-item-search img {
-    left: -8px;
+    margin-left: 0;
   }
   .header__menu-item-search span {
+    padding: 0;
     font-size: 0;
   }
   .header__menu-item-cart {
     padding: 33px 0;
     padding-left: 30px;
   }
+  .header__menu-item-cart:hover img {
+    opacity: 1;
+  }
+  .header__menu-item-cart:active img {
+    opacity: .1;
+  }
   .header__menu-item-cart span {
+    padding: 0;
     font-size: 16px;
   }
   .header__menu-item-cart img {
-    position: relative;
-    left: 0;
     margin-right: 25px;
+    margin-left: 0;
   }
   .header__menu-item-text {
     padding: 0;
@@ -568,7 +598,7 @@ template {
     font-size: 16px;
   }
   .header__menu-item-search {
-    padding: 33px 40.5px;
+    padding: 33px 31px;
   }
   .header__menu-item-cart {
     padding-left: 30px;
@@ -581,6 +611,15 @@ template {
     display: flex;
     margin-top: 19px;
     font-size: 14px;
+  }
+  .header__other-list .header__other-item:hover {
+    opacity: .6;
+  }
+  .header__other-list .header__other-item:active {
+    opacity: .3;
+  }
+  .header__menu-item-icon {
+    opacity: .2;
   }
 }
 .offers {
