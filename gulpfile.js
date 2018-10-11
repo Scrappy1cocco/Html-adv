@@ -19,6 +19,11 @@ gulp.task('pug', function buildHTML() {
     .pipe(gulp.dest("build"))
 });
 
+gulp.task("jsCopy", function() {
+  return gulp.src (["static/js/*.js"], {base: "."})
+  .pipe(gulp.dest("build"))
+});
+
 gulp.task("style", function() {
   gulp.src("static/less/style.less")
     .pipe(plumber())
