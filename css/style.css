@@ -605,6 +605,7 @@ template {
   .header__menu-logo {
     padding: 0;
     padding-top: 11px;
+    border-bottom: none;
   }
   .header__menu-item {
     padding: 33px 0;
