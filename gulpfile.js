@@ -41,6 +41,16 @@ gulp.task("style", function() {
     .pipe(server.reload({stream: true}));
 });
 
+gulp.task("build", function(fn) {
+  run(
+    "pug", "style", "jsCopy",
+    fn
+  );
+});
+
+gulp.task("clean", function() {
+  return del("build");
+});
 gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
