@@ -24,6 +24,15 @@ gulp.task("jsCopy", function() {
   .pipe(gulp.dest("build"))
 });
 
+gulp.task("fonts", function() {
+  return gulp.src (["static/fonts/*.woff", "static/fonts/*.woff2"], {base: "."})
+  .pipe(gulp.dest("build"))
+});
+gulp.task("styleB", function() {
+  return gulp.src (["static/less/style.less"], {base: "."})
+  .pipe(gulp.dest("build"))
+});
+
 gulp.task("style", function() {
   gulp.src("static/less/style.less")
     .pipe(plumber())
@@ -43,7 +52,9 @@ gulp.task("style", function() {
 
 gulp.task("build", function(fn) {
   run(
-    "pug", "style", "jsCopy",
+    "pug", 
+    "style", 
+    "jsCopy",
     fn
   );
 });

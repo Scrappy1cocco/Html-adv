@@ -298,23 +298,23 @@ template {
   display: none;
 }
 @font-face {
-  src: url(/static/fonts/opensans.woff), url(/static/fonts/opensans.woff2);
+  src: url(../build/static/fonts/opensans.woff), url(../build/static/fonts/opensans.woff2);
   font-family: Opensans;
 }
 @font-face {
-  src: url(/static/fonts/opensansbold.woff), url(/static/fonts/opensansbold.woff2);
+  src: url(../build/static/fonts/opensansbold.woff), url(../build/static/fonts/opensansbold.woff2);
   font-family: OpensansBold;
 }
 @font-face {
-  src: url(/static/fonts/VerdanaBold.woff), url(/static/fonts/VerdanaBold.woff2);
+  src: url(../build/static/fonts/VerdanaBold.woff), url(../build/static/fonts/VerdanaBold.woff2);
   font-family: VerdanaBold;
 }
 @font-face {
-  src: url(/static/fonts/Verdana.woff), url(/static/fonts/Verdana.woff2);
+  src: url(../build/static/fonts/Verdana.woff), url(../build/static/fonts/Verdana.woff2);
   font-family: Verdana;
 }
 @font-face {
-  src: url(/static/fonts/TahomaBold.woff), url(/static/fonts/TahomaBold.woff2);
+  src: url(../build/static/fonts/TahomaBold.woff), url(../build/static/fonts/TahomaBold.woff2);
   font-family: TahomaBold;
 }
 .content {
